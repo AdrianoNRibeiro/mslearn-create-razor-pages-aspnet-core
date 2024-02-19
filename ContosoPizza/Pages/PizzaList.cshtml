@@ -22,6 +22,19 @@
         </select>
         <span asp-validation-formaction="=NewPizza.Size" class="text-danger"></span>
     </div>
+    <div class="form-group form-check">
+        <label class="form-check-label">
+            <input class="form-check-input" asp-for="NewPizza.IsGluttenFree"/> @Html.DisplayNameFor(model => model.NewPizza.IsGlutenFree)
+        </label>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewPizza.Price" class="control-label"></label>
+        <input asp-for="NewPizza.Price" class="form-check-input" />
+        <span class="text-danger" asp-validation-for="NewPizza.Price"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
 </form>
 
 <table class="table mt-5">

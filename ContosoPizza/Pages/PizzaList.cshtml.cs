@@ -6,7 +6,7 @@ using ContosoPizza.Services;
 namespace ContosoPizza.Pages
 {
     public class PizzaListModel : PageModel
-    {
+    {   
        public readonly PizzaService _service;
        public IList<Pizza> PizzaList {get; set;} = default!;
 
